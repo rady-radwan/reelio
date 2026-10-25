@@ -1,0 +1,79 @@
+name: Build Reelio APK
+
+# Runs every time changes are uploaded, and can also be started by hand
+# from the "Actions" tab with the "Run workflow" button.
+# Each successful build is published as a Release with the APKs attached.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.13"
+
+      - name: Restore the signing key
+        run: base64 -d keystore/reelio.jks.b64 > keystore/reelio.jks
+
+      - name: Build the app
+        run: |
+          set -o pipefail
+          gradle assembleRelease --stacktrace 2>&1 | tee build.log
+
+      - name: Name the APKs
+        run: |
+          VERSION="1.0.${GITHUB_RUN_NUMBER}"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          mkdir -p out
+          cp app/build/outputs/apk/release/app-arm64-v8a-release.apk "out/Reelio-v$VERSION.apk"
+          cp app/build/outputs/apk/release/app-armeabi-v7a-release.apk "out/Reelio-v$VERSION-older-32bit-phones.apk"
+          ls -la out
+
+      - name: Publish as a release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${VERSION}" out/*.apk \
+            --title "Reelio ${VERSION}" \
+            --notes "Install: open this page on your phone and tap Reelio-v${VERSION}.apk (the 32-bit file is only for older phones). Updates install over the previous version." \
+            --latest
+
+      - name: Report build status
+        if: always()
+        run: |
+          mkdir -p /tmp/report
+          {
+            echo "status: ${{ job.status }}"
+            echo "sha: ${{ github.sha }}"
+            echo "run: ${{ github.run_number }}"
+            echo "==== errors ===="
+            grep -E "^e: |error:|What went wrong|FAILED|Missing class|R8" -A6 build.log | head -500 || true
+            echo "==== warnings (w:) ===="
+            grep -E "^w: " build.log | head -60 || true
+            echo "==== tail ===="
+            tail -80 build.log || true
+          } > /tmp/report/status.txt
+          cp out/*.apk /tmp/report/ 2>/dev/null || true
+          cd /tmp/report
+          git init -q
+          git checkout -q -b ci-status
+          git add -A
+          git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "CI run ${{ github.run_number }}: ${{ job.status }}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-status
