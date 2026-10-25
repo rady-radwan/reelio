@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 # Installs Reelio on an emulator, plays test files and saves screenshots + logs to /tmp/report/qa
 set -x
+trap 'timeout 30 adb logcat -d > /tmp/report/qa/logcat-on-exit.txt 2>/dev/null; grep -E "FATAL EXCEPTION|AndroidRuntime" -A30 /tmp/report/qa/logcat-on-exit.txt > /tmp/report/qa/crashes.txt' EXIT
 R=/tmp/report/qa
 mkdir -p $R
 P=com.rady.reelio
-shot() { sleep ${2:-1}; adb exec-out screencap -p > "$R/$1.png"; }
+shot() { sleep ${2:-1}; timeout 20 adb exec-out screencap -p > "$R/$1.png"; echo "shot $1" >> $R/notes.txt; }
 tap() {
-  adb shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; adb pull /sdcard/ui.xml /tmp/ui.xml >/dev/null 2>&1
+  rm -f /tmp/ui.xml; timeout 25 adb shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; timeout 10 adb pull /sdcard/ui.xml /tmp/ui.xml >/dev/null 2>&1
   xy=$(python3 tools/ui.py /tmp/ui.xml "$1") && adb shell input tap $xy || echo "could not find '$1'" >> $R/notes.txt
 }
-state() { echo "== $1" >> $R/sessions.txt; adb shell dumpsys media_session | grep -E "state=PlaybackState|description=|package=$P" | head -6 >> $R/sessions.txt; }
+state() { echo "== $1" >> $R/sessions.txt; timeout 15 adb shell dumpsys media_session | grep -E "state=PlaybackState|description=|package=$P" | head -6 >> $R/sessions.txt; }
 
 adb install -r -g app/build/outputs/apk/release/app-x86_64-release.apk
 adb shell appops set $P MANAGE_EXTERNAL_STORAGE allow
@@ -55,7 +56,7 @@ adb shell input keyevent KEYCODE_WAKEUP; adb shell wm dismiss-keyguard || true
 adb shell am start -n $P/.MainActivity; sleep 3
 adb shell cmd statusbar expand-notifications; shot 16-notification 2
 adb shell cmd statusbar collapse
-adb logcat -d > $R/logcat-full.txt
+timeout 30 adb logcat -d > $R/logcat-full.txt
 grep -E "FATAL EXCEPTION|AndroidRuntime|E ExoPlayer|E VLC|Reelio|ANR in|libvlc" $R/logcat-full.txt | grep -v "^--" | head -300 > $R/logcat-important.txt
 gzip -f $R/logcat-full.txt
 echo done >> $R/notes.txt
