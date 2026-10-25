@@ -1,0 +1,68 @@
+10-25 07:15:40.336  5163  5163 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:15:40.357  5163  5163 I AndroidRuntime: Using default boot image
+10-25 07:15:40.357  5163  5163 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:15:40.575  5163  5163 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:15:41.985  5163  5163 D AndroidRuntime: Shutting down VM
+10-25 07:15:46.449  5332  5332 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:15:46.453  5332  5332 I AndroidRuntime: Using default boot image
+10-25 07:15:46.457  5332  5332 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:15:46.558  5332  5332 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:15:47.749  5332  5332 D AndroidRuntime: Shutting down VM
+10-25 07:15:52.110  5677  5677 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:15:52.113  5677  5677 I AndroidRuntime: Using default boot image
+10-25 07:15:52.113  5677  5677 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:15:52.196  5677  5677 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:15:53.318  5677  5677 D AndroidRuntime: Shutting down VM
+10-25 07:15:56.650  5813  5813 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:15:56.655  5813  5813 I AndroidRuntime: Using default boot image
+10-25 07:15:56.655  5813  5813 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:15:56.846  5813  5813 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:15:57.938  5813  5813 D AndroidRuntime: Shutting down VM
+10-25 07:16:01.244  5894  5894 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:16:01.248  5894  5894 I AndroidRuntime: Using default boot image
+10-25 07:16:01.248  5894  5894 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:16:01.339  5894  5894 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:16:02.367  5894  5894 D AndroidRuntime: Shutting down VM
+10-25 07:16:05.970  5989  5989 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:16:05.979  5989  5989 I AndroidRuntime: Using default boot image
+10-25 07:16:05.979  5989  5989 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:16:06.125  5989  5989 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:16:07.174  5989  5989 D AndroidRuntime: Shutting down VM
+10-25 07:16:10.295  6049  6049 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-25 07:16:10.306  6049  6049 I AndroidRuntime: Using default boot image
+10-25 07:16:10.306  6049  6049 I AndroidRuntime: Leaving lock profiling enabled
+10-25 07:16:10.469  6049  6049 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-25 07:16:11.543  6049  6049 D AndroidRuntime: Shutting down VM
+10-25 07:16:17.944  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name position
+10-25 07:16:17.944  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name color
+10-25 07:16:17.944  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name localCoord
+10-25 07:16:18.102  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name position
+10-25 07:16:18.104  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name color
+10-25 07:16:18.104  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name localCoord
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name radii_selector
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name corner_and_radius_outsets
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name aa_bloat_and_coverage
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 3 name radii_x
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 4 name radii_y
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 5 name skew
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 6 name translate_and_localrotate
+10-25 07:16:18.248  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 7 name color
+10-25 07:16:37.087  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name position
+10-25 07:16:37.087  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name color
+10-25 07:16:37.087  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name localCoord
+10-25 07:16:38.921  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name position
+10-25 07:16:38.921  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name color
+10-25 07:16:38.921  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name localCoord
+10-25 07:16:51.439  4978  6097 E VLC-std : Fontconfig error: 
+10-25 07:16:51.439  4978  6097 E VLC-std : Cannot load default config file
+10-25 07:16:51.439  4978  6097 E VLC-std : 
+10-25 07:16:58.716  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 1 not implemented
+10-25 07:16:58.736  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 0 not implemented
+10-25 07:16:58.736  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 0 not implemented
+10-25 07:16:58.737  4978  6097 E VLC-std : Fontconfig error: Cannot load default config file
+10-25 07:16:58.737  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 1 not implemented
+10-25 07:16:59.125  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 1 not implemented
+10-25 07:16:59.186  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 0 name position
+10-25 07:16:59.186  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 1 name color
+10-25 07:16:59.186  4978  6097 E VLC-std : s_glBindAttribLocation: bind attrib 2 name localCoord
+10-25 07:16:59.799  4978  6331 E VLC     : [00007e1b46437aa0/18bb] libvlc window: request 3 not implemented

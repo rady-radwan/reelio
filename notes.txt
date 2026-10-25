@@ -1,0 +1,17 @@
+shot 01-home
+shot 02-music
+shot 03-videos
+shot 04-playlists
+shot 05-browse
+shot 06-settings
+could not find 'Test Song MP3'
+shot 07-song-playing
+shot 09-wma-nowplaying
+shot 10-mkv-ac3-subtitles
+shot 11-video-controls
+shot 12-wmv-vlc
+shot 13-webm
+shot 14-avi
+shot 15-mov
+shot 16-notification
+done

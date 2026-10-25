@@ -1,0 +1,84 @@
+== mp3 from list
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36960, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=1.0, updated=40397, actions=8192, custom actions=[], active item id=-1, error=null}
+      state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=43635, actions=2409991, custom actions=[Action:mName='Rewind 10 seconds, mIcon=2131234345, mExtras=null, Action:mName='Fast forward 30 second, mIcon=2131234125, mExtras=null, Action:mName='Skip to next episode, mIcon=2131234405, mExtras=null], active item id=-1, error=null}
+== wma via VLC
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=5700, buffered position=5700, speed=1.0, updated=141614, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=3, description=song6, null, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== ogg
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=2901, buffered position=2901, speed=1.0, updated=145404, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=4, description=Test Song OGG, Ogg Artist, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== flac
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=2931, buffered position=2931, speed=1.0, updated=149316, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=3, description=song5, null, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== opus
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=2895, buffered position=2895, speed=1.0, updated=153380, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=3, description=song7, null, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== mkv ac3 + srt
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=8284, buffered position=8284, speed=1.0, updated=164192, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=6, description=clip2 subtitles, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== wmv via VLC
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=2720, buffered position=2720, speed=1.0, updated=179382, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=4, description=clip5, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== webm
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=5914, buffered position=5914, speed=1.0, updated=186819, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=6, description=clip3, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== avi
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=6091, buffered position=6091, speed=1.0, updated=196751, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=4, description=clip6, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== mov
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=5877, buffered position=5877, speed=1.0, updated=206959, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=6, description=clip4 square, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== after HOME (should still be playing)
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=13246, buffered position=13246, speed=1.0, updated=214617, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=6, description=clip4 square, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+== screen off (should still be playing)
+      package=com.rady.reelio
+      state=PlaybackState {state=PLAYING(3), position=16253, buffered position=16253, speed=1.0, updated=217618, actions=7099315, custom actions=[], active item id=1, error=null}
+      metadata: size=6, description=clip4 square, Video, null
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33534, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=33551, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
+      state=PlaybackState {state=ERROR(7), position=0, buffered position=0, speed=0.0, updated=36643, actions=0, custom actions=[], active item id=-1, error=Bluetooth audio disconnected}
